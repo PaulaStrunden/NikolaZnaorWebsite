@@ -8,7 +8,7 @@ type: Istraživanje pročelja
 year: Patent
 order: 11
 featured: true
-lead: Airshade. Pročelje koje samo sebe zasjenjuje.
+lead: Airshade. Pročelje koje se samo zasjenjuje.
 summary: "Airshade: patentirani pasivni pogon za zasjenjenje pročelja koji pokreću toplina sunca i širenje zraka."
 facts:
   - Dva patenta, jedan odobren i jedan u postupku
@@ -46,18 +46,18 @@ images:
     drawing: true
     fit: contain
   - src: airshade/patent-2-cushions.jpg
-    alt: "Patentni crtež aktuatora: niz zračnih jastuka u kućištu gura štap s oprugom."
+    alt: "Patentni crtež aktuatora: niz zračnih jastuka u kućištu gura šipku s oprugom."
     caption: "Patentni crtež: aktuator"
     drawing: true
     fit: contain
   - src: airshade/patent-3-facade-grid.jpg
-    alt: "Patentni crtež pročelja s trokutastim panelima koji se tijekom dana otvaraju i zatvaraju, od 11:00 do 16:00."
+    alt: "Patentni crtež rastera pročelja s trokutastim panelima koji se tijekom dana otvaraju i zatvaraju, od 11:00 do 16:00."
     caption: "Patentni crtež: pročelje kroz dan"
     drawing: true
     fit: contain
 ---
 Airshade je patentirani pasivni pogon za zasjenjenje pročelja koji je izumio Nikola Znaor. Pokreću ga toplina sunca i širenje zraka, bez senzora, kabela i motora.
 
-Sunce zagrijava zračne komore u jedinicama za zasjenjenje. Zrak koji se širi napuhuje meki robotski aktuator, a to mehaničko gibanje pomiče zasjenjenje. Primjenjiv je na novim zgradama i pri obnovi postojećih.
+Sunce zagrijava zračne komore u jedinicama za zasjenjenje. Zrak koji se širi napuhuje aktuator meke robotike, a to mehaničko gibanje pomiče zasjenjenje. Primjenjiv je i na novim zgradama i pri obnovi postojećih.
 
 Airshade razvija tvrtka Airshade Technologies, osnovana 2022. u Amsterdamu, s industrijskim partnerima Arup i Metadecor te akademskim partnerima AMOLF i TU Eindhoven.

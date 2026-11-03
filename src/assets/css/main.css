@@ -24,6 +24,7 @@
   --text: "NZA DIN", "Barlow", Arial, sans-serif;
   --gutter: clamp(.5rem, 1.75vw, 1.5rem);   /* white margin around the sheet */
   --nav-h: 2.8rem;
+  --no-col: 5.2rem;   /* number column: Fig. 01, 02.1, A … all share one vertical line */
 }
 
 /* 2. Base ------------------------------------------------------------------ */
@@ -99,7 +100,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* 7. Sections are sheets with a title row ---------------------------------- */
 section { border-bottom: 1px solid var(--klein); }
 main > section:last-child { border-bottom: none; }
-.title-row { display: grid; grid-template-columns: 4rem 1fr; border-bottom: 1px solid var(--line); font-family: var(--cond); }
+.title-row { display: grid; grid-template-columns: var(--no-col) 1fr; border-bottom: 1px solid var(--line); font-family: var(--cond); }
 .title-row span { padding: .6rem 1rem; border-right: 1px solid var(--line); font-weight: 500; }
 .title-row h2 { padding: .6rem 1rem; font-weight: 400; font-size: 1.05rem; }
 .body { padding: clamp(2.5rem, 7vh, 5rem) 1rem; }
@@ -266,7 +267,7 @@ html:not(.js) .facade label { display: none; }
 .figures figure:not(.wide) picture { display: block; position: relative; aspect-ratio: 4 / 3; }
 .figures figure:not(.wide) img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .figures figcaption { margin-top: auto; }
-.figures figcaption { display: grid; grid-template-columns: auto 1fr; border-top: 1px solid var(--line); font-family: var(--cond); }
+.figures figcaption { display: grid; grid-template-columns: var(--no-col) 1fr; border-top: 1px solid var(--line); font-family: var(--cond); }
 .figures figcaption > * { padding: .6rem 1rem; }
 .figures .credit { opacity: .75; margin-left: .5rem; }   /* photographer, e.g. © Name */
 .figures .fig-no { border-right: 1px solid var(--line); font-weight: 500; white-space: nowrap; }

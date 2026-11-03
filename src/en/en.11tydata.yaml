@@ -58,13 +58,12 @@ ui:
     research: Research
 
 # Search engines and social media -------------------------------------------
-description: Nikola Znaor Architects. Architecture shaped by natural intelligence, in the Netherlands and Croatia. Available for private houses and renovations.
+description: Nikola Znaor Architects. Architecture shaped by natural intelligence. Available for private houses and renovations.
 
 # Hero on the home page ------------------------------------------------------
 # Each line of the list is one line on screen.
 tagline:
-  - Architecture shaped by natural intelligence,
-  - in the Netherlands and Croatia.
+  - Architecture shaped by natural intelligence.
 
 # 01 Approach ----------------------------------------------------------------
 approach:
@@ -75,15 +74,15 @@ approach:
   # Smaller text under the statement.
   text: "Every project begins with its place: the ground it stands on, the path of the sun, the wind and the climate, the materials close at hand and the craft of the people who build there. The building grows out of these conditions, the way a plant grows from its soil."
   principles:
+    - title: Climate first
+      sketch: climate   # little animated drawing: material | structure | climate
+      text: Orientation, shading and ventilation come before anything else, so the building does the work instead of machines.
     - title: Truth to material
       sketch: material   # little animated drawing: material | structure | climate
       text: Stone, timber and lime used for what they are, with the craft of the people who build with them made visible.
     - title: Structure as expression
       sketch: structure   # little animated drawing: material | structure | climate
       text: The load path becomes the form. Ribs, shells and branching supports carry the building and give it its character.
-    - title: Climate first
-      sketch: climate   # little animated drawing: material | structure | climate
-      text: Orientation, shading and ventilation come before anything else, so the building does the work instead of machines.
 
 # 03 Studio ------------------------------------------------------------------
 studio:
@@ -99,7 +98,7 @@ studio:
     - label: Services
       value: New buildings, renovation, permits, construction, competitions
     - label: Languages
-      value: "Croatian, Dutch (native) · English, German (fluent) · Italian (intermediate)"
+      value: "Croatian, Dutch (native) · English, German (fluent)"
 
 # Press, awards and talks (shown on the Studio page) -------------------------
 press:

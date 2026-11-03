@@ -9,11 +9,11 @@ status: "Završeno"
 year: "2024–2026"
 order: 1
 featured: true
-lead: "Prva trajna ugradnja Airshadea na zgradi."
-summary: "Vinarija Markus Wines kod Splita: oko 100 jedinica Airshade zasjenjuje zgradu samo toplinom sunca."
+lead: "Prva trajna ugradnja sustava Airshade na zgradi."
+summary: "Vinarija Markus Wines kod Splita: oko 100 jedinica Airshade zasjenjuje zgradu, a pokreće ih samo sunčeva toplina."
 images:
   - src: markus-wines/00-wireframe.jpg
-    alt: "Žičani crtež vinarije: raster pročelja i presavijeni ulaz, bijele linije na plavom."
+    alt: "Žičani crtež vinarije: raster pročelja i ulaz u naboru pročelja, bijele linije na plavom."
     caption: "Žičani model"
     fit: contain   # whole drawing, padded with blue
   - src: markus-wines/07-test-facade.jpg
@@ -21,24 +21,24 @@ images:
     caption: "Prototip na ispitnom pročelju"
     position: center 92%   # shows more of the lower part (the facade with the prototype)
   - src: markus-wines/01-entrance.jpg
-    alt: "Zgrada vinarije obložena bakrenastim perforiranim metalnim panelima s motivom vinove loze; u kutu je urezan trokutasti ostakljeni ulaz. Plavo nebo."
-    caption: "Ulaz ispod presavijenog pročelja"
+    alt: "Zgrada vinarije obložena perforiranim metalnim panelima u boji bakra s motivom vinove loze; u kutu je urezan trokutasti ostakljeni ulaz. Plavo nebo."
+    caption: "Ulaz ispod naboranog pročelja"
   - src: markus-wines/02-facade-detail.jpg
-    alt: "Krupni plan perforiranih bakrenastih panela: perforacija iscrtava sliku lišća vinove loze preko ugla zgrade."
+    alt: "Krupni plan perforiranih panela u boji bakra: perforacija iscrtava lišće vinove loze preko kuta zgrade."
     caption: "Detalj pročelja"
   - src: markus-wines/03-long-facade.jpg
-    alt: "Duga strana vinarije s perforiranim pročeljem, šljunčano gradilište u prvom planu."
-    caption: "Dugo pročelje"
+    alt: "Duga strana vinarije s perforiranim pročeljem, u prvom planu šljunčana parcela."
+    caption: "Uzdužno pročelje"
   - src: markus-wines/05-prototype.jpg
-    alt: "Prototip u stvarnoj veličini s trokutastim perforiranim aluminijskim lamelama na čeličnom ispitnom okviru; osoba stoji pokraj njega radi mjerila."
+    alt: "Prototip u prirodnoj veličini s trokutastim perforiranim aluminijskim lamelama na čeličnom ispitnom okviru; osoba stoji pokraj njega radi mjerila."
     caption: "Prototip Airshade, 30.09.2025."
     half: true
   - src: markus-wines/06-prototype-fins.jpg
-    alt: "Trokutaste perforirane lamele prototipa Airshade na čeličnom okviru u niskom suncu; ispred na tlu leži sklopljeni mehanizam."
+    alt: "Trokutaste perforirane lamele prototipa Airshade na čeličnom okviru pri niskom suncu; ispred na tlu leži sklopljeni mehanizam."
     caption: "Lamele prototipa"
     half: true
   - src: markus-wines/10-sketch-pivot-centred.jpg
-    alt: "Skica bijelom olovkom na plavom papiru: lamela na okrugloj bazi s oznakama aluminium extrusion, actuator i pivot point."
+    alt: "Skica bijelom olovkom na plavom papiru: lamela na okrugloj bazi s natpisima na engleskom: aluminium extrusion, actuator i pivot point."
     caption: "Skica: točka zakreta i aktuator"
     fit: contain   # whole sketch, centred, blue all around
   - src: markus-wines/11-sketch-hinge-centred.jpg
@@ -50,10 +50,10 @@ images:
     caption: "Skica: škarasti mehanizam"
     fit: contain   # whole sketch, centred, blue all around
 ---
-Vinarija Markus Wines kod Splita prva je trajna ugradnja Airshadea na zgradi. Oko 100 pasivnih jedinica za zasjenjenje štiti vinariju od jakog hrvatskog ljetnog sunca, a pogled na okolne vinograde ostaje otvoren.
+Vinarija Markus Wines kod Splita prva je trajna ugradnja sustava Airshade na zgradi. Oko 100 pasivnih jedinica za zasjenjenje štiti vinariju od jakog hrvatskog ljetnog sunca, a pogled na okolne vinograde ostaje otvoren.
 
-Jedinice pokreće samo toplina sunca: sunce zagrijava zrak u svakoj jedinici, zrak koji se širi pokreće meki aktuator i zasjenjenje se okreće. Bez senzora, bez motora, bez struje.
+Jedinice pokreće samo sunčeva toplina: sunce zagrijava zrak u svakoj jedinici, zrak se širi i pokreće meki aktuator, a zasjenjenje se zakreće. Bez senzora, bez motora, bez električne energije.
 
-Skice pokazuju kako su paneli zglobno spojeni i kako se pomiču; fotografije prikazuju prototip u stvarnoj veličini prije ugradnje.
+Skice pokazuju kako su paneli zglobno spojeni i kako se pomiču; fotografije prikazuju prototip u prirodnoj veličini prije ugradnje.
 
-Zajedno s Aalto Architectural Bureau studio je projektirao gornje etaže zgrade, a za kinetičko pročelje bio je u potpunosti odgovoran. Pročelje je s Airshade Technologies i Alite razrađeno do svakog panela, spoja i pričvršćenja, testirano na maketama u mjerilu 1:1, proizvedeno u tvrtkama Metadecor i Alumet te praćeno na gradilištu sve do završetka.
+Zajedno s uredom Aalto Architectural Bureau studio je projektirao gornje etaže zgrade, a za kinetičko pročelje bio je sam odgovoran. Pročelje je s tvrtkama Airshade Technologies i Alite razrađeno do svakog panela, spoja i pričvrsnog elementa, ispitano na maketama u mjerilu 1:1 i proizvedeno u tvrtkama Metadecor i Alumet, a studio je izvedbu pratio na gradilištu sve do završetka.

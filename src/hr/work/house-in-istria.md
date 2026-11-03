@@ -20,12 +20,12 @@ images:
     alt: "Kuća s ceste: bijeli volumeni iza suhozida s penjačicama, desno nadstrešnica za automobil, okolo masline."
     caption: "Pogled s ceste"
   - src: house-in-dalmatia/16-terraces-rendering.jpg
-    alt: "Kuća na terasama: kamena baza s visokim otvorima, dugo stubište i natkrivena loggia, iznad bijeli volumen, ispred drveće."
+    alt: "Kuća na terasama: kamena baza s visokim otvorima, dugo stubište i natkrivena lođa, iznad bijeli volumen, ispred drveće."
     caption: "Na terasama"
     wide: true   # one big image across the full width
 ---
 Privatna kuća na kosom terenu u Istri. Kuća je organizirana oko niza vanjskih prostora – terasa, ljetne kuhinje, vrta i bazena – omeđenih niskim kamenim ogradnim zidom. Dnevni prostori potpuno se otvaraju prema krajoliku, dok volumen i materijali slijede lokalnu graditeljsku tradiciju.
 
-Kako bi se postigao taj tok, volumeni i potporni zidovi pažljivo su konstruirani: gornji volumen projektiran je za iznimnu krutost i premošćuje poput toplinski odvojenog mosta.
+Kako bi se postigla ta protočnost, volumeni i potporni zidovi pažljivo su statički razrađeni: gornji volumen projektiran je kao iznimno krut i premošćuje raspon poput toplinski odvojenog mosta.
 
 Konstrukcija: Ivan Dolovcak

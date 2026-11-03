@@ -4,12 +4,12 @@ title: "Javni trg Dubrovnik"
 location: "Dubrovnik, Hrvatska"
 category: competition
 mini: paving   # little drawing in the project list (see partials/project-mini.njk)
-type: "Trg i obala"
+type: "Javni trg i obala"
 status: "Natječajni rad"
 year: "2024"
 order: 5
 featured: true
-lead: "Neprekinuta kamena površina čiji se uzorak popločenja skuplja u skulpturu."
+lead: "Neprekinuta kamena površina čiji uzorak popločenja prerasta u skulpturu."
 summary: "Natječajni rad za javni trg i obalu u Dubrovniku, s kiparom Teom Hercegom i proizvođačem kamena Pazin Kamen."
 images:
   - src: villa-in-dubrovnik/00-wireframe.jpg
@@ -29,17 +29,17 @@ images:
     alt: "Maketa kvadratnih kamenih ploča u dva tona, ružičastom i bijelom."
     caption: "Maketa: popločenje"
   - src: villa-in-dubrovnik/05-concrete-1.jpg
-    alt: "Dva betonska bloka sa zelenim glaziranim keramičkim komadom između njih."
+    alt: "Dva betonska bloka sa zelenim glaziranim keramičkim elementom između njih."
     caption: "Beton i keramika"
   - src: villa-in-dubrovnik/08-view-column.jpg
     alt: "Pogled preko trga: staza vodi između maslina i lavande do visokog kamenog stupa sa zelenim keramičkim elementom."
     caption: "Pogled prema stupu"
   - src: villa-in-dubrovnik/06-concrete-2.jpg
     alt: "Isti objekt s druge strane."
-    caption: "Beton i keramika, bočno"
+    caption: "Beton i keramika, bočni pogled"
 ---
-Natječajni rad za javni trg i obalu u Dubrovniku, razvijen s mladim kiparom Teom Hercegom i proizvođačem kamena Pazin Kamen. Prijedlog tretira trg kao neprekinutu kamenu površinu sa zelenim vrtnim zonama. Uzorak popločenja vodi kretanje, označava rubove i skuplja se u integrirani skulpturalni element.
+Natječajni rad za javni trg i obalu u Dubrovniku, razvijen s mladim kiparom Teom Hercegom i proizvođačem kamena Pazin Kamen. Prijedlog trg shvaća kao neprekinutu kamenu površinu sa zelenim vrtnim zonama. Uzorak popločenja vodi kretanje, označava rubove i prerasta u integrirani skulpturalni element.
 
-Detalji lokalnog kamena razrađeni su s proizvođačem kako bi se projekt mogao izvesti u stvarnoj veličini, uz reference na graditeljsko nasljeđe Dubrovnika i njegove povijesne grafičke simbole.
+Detalji u lokalnom kamenu razrađeni su s proizvođačem kako bi se rješenje moglo izvesti u prirodnoj veličini, a oslanjaju se na graditeljsko nasljeđe Dubrovnika i njegove povijesne grafičke simbole.
 
 Skulptura: Teo Herceg · Kamen: Pazin Kamen

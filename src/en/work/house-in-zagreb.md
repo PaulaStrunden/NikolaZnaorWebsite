@@ -22,20 +22,14 @@ images:
     alt: "The house in its street on an overcast day: a light stone facade with tall timber windows and small balconies, between trees and the neighbouring houses, the wet road reflecting in front."
     caption: "In the street"
     position: center 85%
-  - src: house-in-zagreb/analysis-existing.jpg
-    alt: "The original street facade with red axes marking its three-part division, the gable and the rusticated ground floor."
-    caption: "Existing facade, analysis"
-  - src: house-in-zagreb/analysis-proportions.jpg
-    alt: "Diagram of the new facade: the proportions of the old middle third set the openings, the gable and rustication return in red."
-    caption: "Proportions carried over"
+  - src: house-in-zagreb/concept.jpg
+    alt: "Four diagrams: from the existing house to the new one, keeping its position, facade line and gabled roof; white lines on blue."
+    caption: "Concept"
+    fit: contain
   - src: house-in-zagreb/render-front.jpg
     alt: "White model of the street facade: tall timber windows with small balconies, the entrance stair and the forecourt."
     caption: "Street facade, model"
     position: center 45%
-  - src: house-in-zagreb/plan-ground-zoom.jpg
-    alt: "Ground floor plan with the recessed entrance, stairs and rooms; white lines on blue."
-    caption: "Ground floor plan"
-    fit: contain
   - src: house-in-zagreb/plan-first-zoom.jpg
     alt: "First floor plan; white lines on blue."
     caption: "First floor plan"
@@ -51,10 +45,6 @@ images:
   - src: house-in-zagreb/elevation-west-margin.jpg
     alt: "Elevation of the garden facade with large windows and a balcony; white lines on blue."
     caption: "Garden facade, elevation"
-    fit: contain
-  - src: house-in-zagreb/concept.jpg
-    alt: "Four diagrams: from the existing house to the new one, keeping its position, facade line and gabled roof; white lines on blue."
-    caption: "Concept"
     fit: contain
 ---
 The existing family house was damaged in the earthquake beyond reasonable repair, and too little archival material survives to rebuild it faithfully. Instead of a facsimile that would only imitate its outline, we propose a new house that is informed in every respect by the old one.

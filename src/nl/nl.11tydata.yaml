@@ -23,10 +23,10 @@ ui:
   shown_one: "{n} project zichtbaar"
   shown_many: "{n} projecten zichtbaar"
   open_project: Project bekijken
-  all_work: Volledige index
+  all_work: Volledig overzicht
   previous: Vorig project
   next: Volgend project
-  back_to_index: Al het werk
+  back_to_index: Alle projecten
   project: Project
   location: Locatie
   type: Type
@@ -51,31 +51,30 @@ ui:
     competition: Prijsvragen
     research: Onderzoek
 
-description: Nikola Znaor Architects. Architectuur gevormd door natuurlijke intelligentie, in Nederland en Kroatië. Beschikbaar voor particuliere woningen en renovaties.
+description: Nikola Znaor Architects. Architectuur gevormd door natuurlijke intelligentie. Beschikbaar voor particuliere woningen en renovaties.
 
 tagline:
-  - Architectuur gevormd door natuurlijke intelligentie,
-  - in Nederland en Kroatië.
+  - Architectuur gevormd door natuurlijke intelligentie.
 
 approach:
   statement:
-    - Structuur die groeit uit haar plek.
+    - Structuur die uit haar plek groeit.
     - Minimaal, functioneel en verfijnd.
-  text: "Elk project begint bij zijn plek: de grond waarop het staat, de baan van de zon, de wind en het klimaat, de materialen die voorhanden zijn en het vakmanschap van de mensen die er bouwen. Het gebouw groeit uit deze omstandigheden, zoals een plant uit zijn bodem groeit."
+  text: "Elk project begint bij de plek: de grond waarop het staat, de baan van de zon, de wind en het klimaat, de materialen die voorhanden zijn en het vakmanschap van de mensen die er bouwen. Het gebouw groeit vanuit deze omstandigheden, zoals een plant uit de bodem."
   principles:
-    - title: Trouw aan het materiaal
-      sketch: material   # little animated drawing: material | structure | climate
-      text: Steen, hout en kalk gebruikt om wat ze zijn, met het vakmanschap van de mensen die ermee bouwen zichtbaar gemaakt.
-    - title: Constructie als expressie
-      sketch: structure   # little animated drawing: material | structure | climate
-      text: De krachtenloop wordt de vorm. Ribben, schalen en vertakte steunen dragen het gebouw en geven het zijn karakter.
     - title: Klimaat voorop
       sketch: climate   # little animated drawing: material | structure | climate
-      text: Oriëntatie, zonwering en ventilatie gaan voor alles, zodat het gebouw het werk doet in plaats van machines.
+      text: Oriëntatie, zonwering en ventilatie komen op de eerste plaats, zodat het gebouw zelf het werk doet, niet de installaties.
+    - title: Trouw aan het materiaal
+      sketch: material   # little animated drawing: material | structure | climate
+      text: Steen, hout en kalk, ingezet om wat ze zijn; het vakmanschap van de mensen die ermee bouwen blijft zichtbaar.
+    - title: Constructie als expressie
+      sketch: structure   # little animated drawing: material | structure | climate
+      text: De krachtsafdracht wordt vorm. Ribben, schalen en vertakte steunen dragen het gebouw en geven het zijn karakter.
 
 studio:
-  statement: Van eerste schets tot vergunning tot bouw.
-  text: Nikola Znaor is een bekroonde architect en uitvinder en werkt tussen Nederland en Kroatië.
+  statement: Van eerste schets via vergunning tot uitvoering.
+  text: Nikola Znaor is een bekroonde architect en uitvinder, werkzaam in Nederland en Kroatië.
   facts:
     - label: Oprichter
       value: Nikola Znaor, MArch
@@ -84,9 +83,9 @@ studio:
     - label: Kantoren
       value: Amsterdam, Zagreb
     - label: Diensten
-      value: Nieuwbouw, renovatie, vergunningen, bouw, prijsvragen
+      value: Nieuwbouw, renovatie, vergunningen, uitvoering, prijsvragen
     - label: Talen
-      value: "Kroatisch, Nederlands (moedertaal) · Engels, Duits (vloeiend) · Italiaans (gemiddeld)"
+      value: "Kroatisch, Nederlands (moedertaal) · Engels, Duits (vloeiend)"
 
 press:
   title: Pers en prijzen
@@ -103,7 +102,7 @@ press:
       what: "DETAIL: SOMBRA-paviljoen in Venetië van MVRDV"
       url: https://www.detail.de/de_en/sombra-pavillon-in-venedig-von-mvrdv
     - when: "2025"
-      what: "Dezeen: tentoonstellingen Architectuurbiënnale Venetië"
+      what: "Dezeen: tentoonstellingen op de Architectuurbiënnale van Venetië"
       url: https://www.dezeen.com/2025/05/20/venice-architecture-biennale-exhibitions-off-the-beaten-track/
   talks: []   # add entries here (when / what / url) to show this list again
 

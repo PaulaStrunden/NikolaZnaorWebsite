@@ -5,7 +5,7 @@ location: "Venetië, Italië"
 category: pavilion
 mini: shell   # little drawing in the project list (see partials/project-mini.njk)
 type: Paviljoen
-status: "Gebouwd"
+status: "Gerealiseerd"
 year: "2025"
 order: 2
 featured: true
@@ -17,7 +17,7 @@ images:
     caption: "Draadmodel"
     fit: contain   # whole drawing, padded with blue
   - src: sombra/08-visitor.jpg
-    alt: "Een bezoeker staat aan de rand van het paviljoen en toont de afmetingen."
+    alt: "Een bezoeker staat aan de rand van het paviljoen en maakt de schaal zichtbaar."
     caption: "Schaal"
     credit: Federico Vespignani
     position: center bottom   # keep the whole floor platform in view
@@ -27,7 +27,7 @@ images:
     credit: Federico Vespignani
   - src: sombra/04-panels.jpg
     alt: "Close-up van donkere geperforeerde driehoekige panelen met een rasterpatroon."
-    caption: "Detail panelen"
+    caption: "Paneeldetail"
     credit: Jaap Heemskerk
   - src: sombra/06-arches.jpg
     alt: "Rij gebogen ribben met gele elementen, gezien vanuit het paviljoen."
@@ -43,10 +43,10 @@ images:
     credit: Jaap Heemskerk
   - src: sombra/12-looking-up.jpg
     alt: "Blik omhoog door de gebogen ribben en geperforeerde panelen naar de lucht."
-    caption: "Omhoog kijken"
+    caption: "Blik omhoog"
     credit: Jaap Heemskerk
 ---
-SOMBRA is een kinetisch schaduwpaviljoen, ontworpen door MVRDV en getoond op de Architectuurbiënnale van Venetië. De zonwering reageert op zonlicht zonder elektronica of motoren, aangedreven door Airshade-technologie.
+SOMBRA is een kinetisch schaduwpaviljoen, ontworpen door MVRDV en getoond op de Architectuurbiënnale van Venetië. De zonwering reageert op zonlicht, zonder elektronica of motoren, en wordt aangedreven door Airshade-technologie.
 
 Het paviljoen werd uitgeroepen tot Pavilion of the Year bij de Archello Awards 2025.
 

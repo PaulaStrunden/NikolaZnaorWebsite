@@ -32,7 +32,7 @@ ui:
   location: Lokacija
   type: Vrsta
   status: Status
-  website: Web stranica
+  website: Web-stranica
   year: Godina
   description: Opis
   images: Crteži i slike
@@ -41,8 +41,8 @@ ui:
   language: Jezik
   title_block: Zaglavlje nacrta
   airshade_drawing: Pročelje, lamele
-  airshade_aria: Presjek pročelja s lamelama koje se zatvaraju što je sunce jače
-  airshade_note: Pomaknite klizač. Lamele se zatvaraju što je sunce jače.
+  airshade_aria: Presjek pročelja s lamelama koje se zatvaraju kako sunce jača
+  airshade_note: Pomaknite klizač. Lamele se zatvaraju kako sunce jača.
   sun_intensity: Jačina sunca
   categories:
     pavilion: Paviljoni
@@ -50,33 +50,32 @@ ui:
     house: Kuće
     renovation: Obnove
     competition: Natječaji
-    research: Istraživanje
+    research: Istraživanja
 
-description: Nikola Znaor Architects. Arhitektura oblikovana prirodnom inteligencijom, u Nizozemskoj i Hrvatskoj. Dostupni za privatne kuće i obnove.
+description: Nikola Znaor Architects. Arhitektura oblikovana prirodnom inteligencijom. Prihvaćamo projekte privatnih kuća i obnova.
 
 tagline:
-  - Arhitektura oblikovana prirodnom inteligencijom,
-  - u Nizozemskoj i Hrvatskoj.
+  - Arhitektura oblikovana prirodnom inteligencijom.
 
 approach:
   statement:
-    - Struktura koja raste iz svog mjesta.
+    - Konstrukcija koja izrasta iz svog mjesta.
     - Minimalno, funkcionalno i istančano.
   text: "Svaki projekt počinje od svog mjesta: tla na kojem stoji, putanje sunca, vjetra i klime, materijala nadohvat ruke i umijeća ljudi koji ondje grade. Zgrada izrasta iz tih uvjeta, kao što biljka izrasta iz svog tla."
   principles:
-    - title: Istina materijala
+    - title: Klima na prvom mjestu
+      sketch: climate   # little animated drawing: material | structure | climate
+      text: Orijentacija, zasjenjenje i provjetravanje dolaze prije svega, tako da posao obavlja zgrada, a ne strojevi.
+    - title: Istinitost materijala
       sketch: material   # little animated drawing: material | structure | climate
-      text: Kamen, drvo i vapno korišteni onakvi kakvi jesu, uz vidljivo umijeće ljudi koji s njima grade.
+      text: Kamen, drvo i vapno koriste se onakvi kakvi jesu, a umijeće ljudi koji s njima grade ostaje vidljivo.
     - title: Konstrukcija kao izraz
       sketch: structure   # little animated drawing: material | structure | climate
       text: Tok sila postaje oblik. Rebra, ljuske i razgranati oslonci nose zgradu i daju joj karakter.
-    - title: Klima na prvom mjestu
-      sketch: climate   # little animated drawing: material | structure | climate
-      text: Orijentacija, zasjenjenje i prozračivanje dolaze prije svega, tako da posao obavlja zgrada, a ne strojevi.
 
 studio:
   statement: Od prve skice do dozvole i gradnje.
-  text: Nikola Znaor nagrađivani je arhitekt i izumitelj koji radi između Nizozemske i Hrvatske.
+  text: Nikola Znaor nagrađivani je arhitekt i izumitelj koji djeluje u Nizozemskoj i Hrvatskoj.
   facts:
     - label: Osnivač
       value: Nikola Znaor, MArch
@@ -87,7 +86,7 @@ studio:
     - label: Usluge
       value: Novogradnja, obnova, dozvole, gradnja, natječaji
     - label: Jezici
-      value: "hrvatski, nizozemski (materinski) · engleski, njemački (tečno) · talijanski (srednja razina)"
+      value: "hrvatski, nizozemski (materinski) · engleski, njemački (tečno)"
 
 press:
   title: Mediji i nagrade
@@ -104,9 +103,9 @@ press:
       what: "DETAIL: paviljon SOMBRA u Veneciji, MVRDV"
       url: https://www.detail.de/de_en/sombra-pavillon-in-venedig-von-mvrdv
     - when: "2025"
-      what: "Dezeen: izložbe Venecijanskog bijenala arhitekture"
+      what: "Dezeen: izložbe na Venecijanskom bijenalu arhitekture"
       url: https://www.dezeen.com/2025/05/20/venice-architecture-biennale-exhibitions-off-the-beaten-track/
   talks: []   # add entries here (when / what / url) to show this list again
 
 contact:
-  availability: Dostupni za privatne kuće i obnove.
+  availability: Prihvaćamo projekte privatnih kuća i obnova.
