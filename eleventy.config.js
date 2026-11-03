@@ -14,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { load as loadYaml } from "js-yaml";
 import Image from "@11ty/eleventy-img";
+import sharp from "sharp";
 import { HtmlBasePlugin } from "@11ty/eleventy";
 
 const LANGUAGES = ["en", "nl", "hr"]; // must match the folders in src/ and site.languages
@@ -176,16 +177,28 @@ export default function (eleventyConfig) {
 
   // Open Graph image: first real project image, otherwise the default blueprint image.
   eleventyConfig.addAsyncShortcode("ogImage", async function (images) {
+    // Share preview for WhatsApp, LinkedIn etc.: always 1200 × 630.
+    // Blue drawings (fit: contain) sit whole on Klein Blue; photos are cropped to fill.
     const base = this.ctx?.site?.url || "";
     const first = (images || []).find((img) => img.src && fs.existsSync(path.join("src/images", img.src)));
     if (!first) return new URL("/assets/og-default.png", base).href;
-    const metadata = await Image(path.join("src/images", first.src), {
-      widths: [1200],
-      formats: ["jpeg"],
-      outputDir: "_site/img/",
-      urlPath: "/img/",
-    });
-    return new URL(metadata.jpeg[0].url, base).href;
+    const input = path.join("src/images", first.src);
+    const name = `NikolaZnaorArchitects_${this.page.fileSlug}_share.jpg`;
+    const output = path.join("_site/img/share", name);
+    if (!fs.existsSync(output) || fs.statSync(output).mtimeMs < fs.statSync(input).mtimeMs) {
+      fs.mkdirSync(path.dirname(output), { recursive: true });
+      const contain = first.fit === "contain";
+      const blue = { r: 0, g: 47, b: 167, alpha: 1 };
+      const picture = contain
+        ? await sharp(input).resize(1080, 560, { fit: "inside" }).toBuffer()   // whole drawing with a blue margin
+        : await sharp(input).resize(1200, 630, { fit: "cover" }).toBuffer();
+      await sharp({ create: { width: 1200, height: 630, channels: 3, background: blue } })
+        .composite([{ input: picture, gravity: "centre" }])
+        .jpeg({ quality: 85 })
+        .toFile(output);
+    }
+    const v = Math.round(fs.statSync(input).mtimeMs / 1000).toString(36);
+    return new URL(`/img/share/${name}?v=${v}`, base).href;
   });
 
   // 6. Placeholder report -------------------------------------------------
