@@ -1,0 +1,19 @@
+{#-
+  01 Approach. Texts come from src/<lang>/<lang>.11tydata.yaml (approach:)
+  Left: the statement and the text about place.
+  Right: the three principles as a clean hairline grid, each with a square animated drawing.
+-#}
+<section id="approach" aria-labelledby="approach-title">
+  <div class="title-row"><span>01</span><h2 id="approach-title">{{ ui.approach }}</h2></div>
+  <div class="split approach-split">
+    <div>
+      <p class="statement">{{ approach.statement | join(" ") }}</p>
+      {%- if approach.text %}<p class="small">{{ approach.text }}</p>{% endif %}
+    </div>
+    <ul class="principles">
+      {%- for p in approach.principles %}
+      <li>{% include "partials/principle-sketch.njk" %}<div class="principle-text"><h3>{{ p.title }}</h3><p>{{ p.text }}</p></div></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

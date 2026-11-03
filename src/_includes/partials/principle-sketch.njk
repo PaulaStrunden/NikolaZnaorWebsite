@@ -1,0 +1,49 @@
+{#-
+  Small animated line drawing next to each principle (Approach).
+  Set `sketch:` on a principle in the language file: material | structure | climate.
+  Drawn in Klein Blue on white; the motion stops when "reduce motion" is on.
+-#}
+<svg class="sketch sk-{{ p.sketch }}" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+{%- if p.sketch == "material" %}
+  {#- Stone courses laid one by one, a timber lintel on top -#}
+  <line x1="8" y1="86" x2="92" y2="86" class="ground"/>
+  <g class="b-row">
+    <rect class="b" style="--d:0s"   x="14" y="72" width="24" height="13"/>
+    <rect class="b" style="--d:.3s"  x="39" y="72" width="22" height="13"/>
+    <rect class="b" style="--d:.6s"  x="62" y="72" width="24" height="13"/>
+    <rect class="b" style="--d:.9s"  x="14" y="58" width="15" height="13"/>
+    <rect class="b" style="--d:1.2s" x="30" y="58" width="24" height="13"/>
+    <rect class="b" style="--d:1.5s" x="55" y="58" width="31" height="13"/>
+    <rect class="b" style="--d:1.8s" x="14" y="44" width="22" height="13"/>
+    <rect class="b" style="--d:2.1s" x="37" y="44" width="20" height="13"/>
+    <rect class="b" style="--d:2.4s" x="58" y="44" width="28" height="13"/>
+  </g>
+  <g class="b" style="--d:2.9s">
+    <rect x="10" y="35" width="80" height="8"/>
+    <path d="M18 39 q8 -2 16 0 t16 0 M54 38 q8 2 16 0 t14 1" class="grain"/>
+  </g>
+{%- elif p.sketch == "structure" %}
+  {#- Load runs from the roof through branching supports into the ground -#}
+  <line x1="8" y1="86" x2="92" y2="86" class="ground"/>
+  <line x1="14" y1="24" x2="86" y2="24"/>
+  <path class="arrow" d="M30 8 v10 m-3 -3 l3 3 l3 -3 M50 8 v10 m-3 -3 l3 3 l3 -3 M70 8 v10 m-3 -3 l3 3 l3 -3"/>
+  <path class="frame" d="M30 24 L37 45 L50 60 L50 86 M70 24 L63 45 L50 60 M50 24 L50 60 M37 45 L22 30 M63 45 L78 30"/>
+  <path class="flow" d="M30 24 L37 45 L50 60 L50 86"/>
+  <path class="flow" style="--d:.6s" d="M70 24 L63 45 L50 60 L50 86"/>
+  <path class="flow" style="--d:1.2s" d="M50 24 L50 86"/>
+{%- elif p.sketch == "climate" %}
+  {#- The sun travels its arc, the facade fins turn with it, air moves through -#}
+  <path class="orbit" d="M10 62 Q40 -4 70 22"/>
+  <circle class="sun" r="5"/>
+  <line x1="74" y1="26" x2="74" y2="86"/>
+  <line x1="8" y1="86" x2="92" y2="86" class="ground"/>
+  <g class="fins">
+    <line class="fin" x1="74" y1="32" x2="86" y2="32"/>
+    <line class="fin" x1="74" y1="42" x2="86" y2="42"/>
+    <line class="fin" x1="74" y1="52" x2="86" y2="52"/>
+    <line class="fin" x1="74" y1="62" x2="86" y2="62"/>
+    <line class="fin" x1="74" y1="72" x2="86" y2="72"/>
+  </g>
+  <path class="air" d="M8 78 q12 -6 24 0 t24 0 t18 0"/>
+{%- endif %}
+</svg>

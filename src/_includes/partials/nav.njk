@@ -1,0 +1,25 @@
+{#-
+  Navigation: the blue top strip of the sheet.
+  The current page (and every project page under Work) is marked with aria-current.
+-#}
+{%- set links = [
+  { key: "approach", url: prefix + "/approach/" },
+  { key: "work",     url: prefix + "/work/" },
+  { key: "studio",   url: prefix + "/studio/" },
+  { key: "contact",  url: prefix + "/contact/" }
+] -%}
+<nav class="nav" aria-label="{{ ui.nav_label }}">
+  <a class="brand" href="{{ prefix }}/">{{ site.name }}</a>
+  {#- Language switch: the same page in the other languages #}
+  {%- set path = page.url.slice(prefix.length) %}
+  <div class="lang" role="group" aria-label="{{ ui.language }}">
+    {%- for l in site.languages %}{% if not loop.first %}<span aria-hidden="true">/</span>{% endif %}<a href="{{ l.prefix }}{{ path }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang %} aria-current="true"{% endif %}>{{ l.label }}</a>{% endfor %}
+  </div>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+          data-open="{{ ui.menu }}" data-close="{{ ui.close }}">{{ ui.menu }}</button>
+  <ul id="nav-links">
+    {%- for link in links %}
+    <li><a href="{{ link.url }}"{% if page.url.startsWith(link.url) %} aria-current="{{ 'page' if page.url == link.url else 'true' }}"{% endif %}>{{ ui[link.key] }}</a></li>
+    {%- endfor %}
+  </ul>
+</nav>

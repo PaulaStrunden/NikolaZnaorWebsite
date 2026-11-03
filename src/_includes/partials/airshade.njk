@@ -1,0 +1,20 @@
+{#-
+  Airshade facade diagram (interactive). The fins are added and moved by assets/js/airshade.js.
+  Without JavaScript the drawing shows the frame only, with the slider hidden.
+-#}
+<div class="facade" data-airshade>
+  <svg viewBox="0 0 400 280" role="img" aria-label="{{ ui.airshade_aria }}">
+    <g stroke="#002FA7" stroke-width=".75" fill="none">
+      <rect x="30" y="60" width="340" height="200"></rect>
+      <line x1="30" y1="40" x2="370" y2="40"></line>
+      <line x1="30" y1="34" x2="30" y2="46"></line>
+      <line x1="370" y1="34" x2="370" y2="46"></line>
+    </g>
+    <text x="200" y="32" text-anchor="middle" font-size="13" fill="#002FA7">{{ ui.airshade_drawing }}</text>
+    <circle class="sun" cx="345" cy="15" r="8" fill="none" stroke="#002FA7" stroke-width="1.5"></circle>
+    <g class="fins" stroke="#002FA7" stroke-linecap="butt"></g>
+  </svg>
+  <label for="heat">{{ ui.sun_intensity }} <output for="heat">30%</output>
+    <input id="heat" type="range" min="0" max="100" value="30">
+  </label>
+</div>

@@ -1,0 +1,15 @@
+{#- 03 Studio. Texts come from src/en/en.11tydata.yaml (studio:) -#}
+<section id="studio" aria-labelledby="studio-title">
+  <div class="title-row"><span>03</span><h2 id="studio-title">{{ ui.studio }}</h2></div>
+  <div class="split">
+    <div>
+      <p class="statement">{{ studio.statement }}</p>
+      <p class="small">{{ studio.text }}</p>
+    </div>
+    <dl>
+      {%- for f in studio.facts %}
+      <dt>{{ f.label }}</dt><dd>{{ f.value }}</dd>
+      {%- endfor %}
+    </dl>
+  </div>
+</section>

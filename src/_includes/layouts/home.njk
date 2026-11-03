@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+{#- Home: hero with the growing structure, then 01 Approach, 02 Selected work, 03 Studio, 04 Contact. -#}
+{%- set projects = collections["projects_" + lang] -%}
+<header class="hero">
+  <canvas class="blueprint" data-tree="hero" aria-hidden="true"></canvas>
+  <p>{%- for line in tagline %}<span>{{ line }}</span>{% endfor %}</p>
+  <h1 data-snap><span>Nikola Znaor</span> <span>Architects</span></h1>
+</header>
+
+<main id="main">
+  {% include "partials/approach.njk" %}
+
+  <section id="work" aria-labelledby="work-title">
+    <div class="title-row"><span>02</span><h2 id="work-title">{{ ui.work }}</h2></div>
+    {%- set shown = projects | featured %}
+    {% include "partials/work-filters.njk" %}
+    {#- asyncEach (not for): needed because the rows contain images, which are processed asynchronously #}
+    {%- asyncEach project in shown %}
+    {% include "partials/project-row.njk" %}
+    {%- endeach %}
+    <a class="row-link" href="{{ prefix }}/work/">{{ ui.all_work }} <span aria-hidden="true">→</span></a>
+  </section>
+
+  {% include "partials/studio.njk" %}
+  {% include "partials/contact.njk" %}
+</main>

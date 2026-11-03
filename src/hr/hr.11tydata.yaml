@@ -1,0 +1,112 @@
+# ---------------------------------------------------------------------------
+# Hrvatski tekstovi za cijelu stranicu (prijevod src/en/en.11tydata.yaml).
+# Prevodi se samo tekst nakon dvotočke; riječi prije nje ostaju iste.
+# Rezervirana mjesta (placeholderi) stoje u [uglatim zagradama].
+# ---------------------------------------------------------------------------
+
+lang: hr
+prefix: "/hr"
+locale: hr_HR
+
+ui:
+  skip: Preskoči na sadržaj
+  menu: Izbornik
+  close: Zatvori
+  nav_label: Glavni izbornik
+  approach: Pristup
+  work: Radovi
+  studio: Studio
+  contact: Kontakt
+  sheet: List
+  all: Sve
+  filter_label: Filtriraj projekte
+  # Croatian plural forms differ (1 projekt, 2 projekta, 5 projekata), so a neutral form is used.
+  shown_one: "Prikazano projekata: {n}"
+  shown_many: "Prikazano projekata: {n}"
+  open_project: Otvori projekt
+  all_work: Cijeli popis
+  previous: Prethodni projekt
+  next: Sljedeći projekt
+  back_to_index: Svi radovi
+  project: Projekt
+  location: Lokacija
+  type: Vrsta
+  status: Status
+  website: Web stranica
+  year: Godina
+  description: Opis
+  images: Crteži i slike
+  figure: Sl.
+  diagram: Dijagram
+  language: Jezik
+  title_block: Zaglavlje nacrta
+  airshade_drawing: Pročelje, lamele
+  airshade_aria: Presjek pročelja s lamelama koje se zatvaraju što je sunce jače
+  airshade_note: Pomaknite klizač. Lamele se zatvaraju što je sunce jače.
+  sun_intensity: Jačina sunca
+  categories:
+    pavilion: Paviljoni
+    building: Zgrade
+    house: Kuće
+    renovation: Obnove
+    competition: Natječaji
+    research: Istraživanje
+
+description: Nikola Znaor Architects. Arhitektura oblikovana prirodnom inteligencijom, u Nizozemskoj i Hrvatskoj. Dostupni za privatne kuće i obnove.
+
+tagline:
+  - Arhitektura oblikovana prirodnom inteligencijom,
+  - u Nizozemskoj i Hrvatskoj.
+
+approach:
+  statement:
+    - Struktura koja raste iz svog mjesta.
+    - Minimalno, funkcionalno i istančano.
+  text: "Svaki projekt počinje od svog mjesta: tla na kojem stoji, putanje sunca, vjetra i klime, materijala nadohvat ruke i umijeća ljudi koji ondje grade. Zgrada izrasta iz tih uvjeta, kao što biljka izrasta iz svog tla."
+  principles:
+    - title: Istina materijala
+      sketch: material   # little animated drawing: material | structure | climate
+      text: Kamen, drvo i vapno korišteni onakvi kakvi jesu, uz vidljivo umijeće ljudi koji s njima grade.
+    - title: Konstrukcija kao izraz
+      sketch: structure   # little animated drawing: material | structure | climate
+      text: Tok sila postaje oblik. Rebra, ljuske i razgranati oslonci nose zgradu i daju joj karakter.
+    - title: Klima na prvom mjestu
+      sketch: climate   # little animated drawing: material | structure | climate
+      text: Orijentacija, zasjenjenje i prozračivanje dolaze prije svega, tako da posao obavlja zgrada, a ne strojevi.
+
+studio:
+  statement: Od prve skice do dozvole i gradnje.
+  text: Nikola Znaor nagrađivani je arhitekt i izumitelj koji radi između Nizozemske i Hrvatske.
+  facts:
+    - label: Osnivač
+      value: Nikola Znaor, MArch
+    - label: Ovlaštenje
+      value: Arhitekt u Nizozemskoj i Hrvatskoj
+    - label: Uredi
+      value: Amsterdam, Zagreb
+    - label: Usluge
+      value: Novogradnja, obnova, dozvole, gradnja, natječaji
+    - label: Jezici
+      value: "hrvatski, nizozemski (materinski) · engleski, njemački (tečno) · talijanski (srednja razina)"
+
+press:
+  title: Mediji i nagrade
+  press_title: Mediji i nagrade
+  talks_title: Predavanja i radionice
+  press:
+    # url: optional link to the article
+    - when: "2025"
+      what: "Archello Awards, Pavilion of the Year: SOMBRA (s MVRDV-om)"
+    - when: "2025"
+      what: "ArchDaily: SOMBRA Pavilion / MVRDV"
+      url: https://www.archdaily.com/1029913/sombra-pavilion-mvrdv
+    - when: "2025"
+      what: "DETAIL: paviljon SOMBRA u Veneciji, MVRDV"
+      url: https://www.detail.de/de_en/sombra-pavillon-in-venedig-von-mvrdv
+    - when: "2025"
+      what: "Dezeen: izložbe Venecijanskog bijenala arhitekture"
+      url: https://www.dezeen.com/2025/05/20/venice-architecture-biennale-exhibitions-off-the-beaten-track/
+  talks: []   # add entries here (when / what / url) to show this list again
+
+contact:
+  availability: Dostupni za privatne kuće i obnove.

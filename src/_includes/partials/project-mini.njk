@@ -1,0 +1,53 @@
+{#-
+  Tiny line drawing for a project row (Work list and Home).
+  Chosen with `mini:` in the project's front matter. Redraws itself when the row is hovered.
+  Available: winery, shell, house-pool, canopy, paving, villa, apartment, gable, mountain, rooftop, actuator
+-#}
+<svg class="mini" viewBox="0 0 60 40" aria-hidden="true" focusable="false">
+  <line pathLength="1" class="g" x1="4" y1="33" x2="56" y2="33"/>
+{%- set m = d.mini or "gable" %}
+{%- if m == "winery" %}
+  <path pathLength="1" d="M10 33 V8 H50 V33"/>
+  <path pathLength="1" d="M10 20 H50 M23 8 V20 M37 8 V20 M17 20 L23 33 M43 20 L37 33"/>
+  <path pathLength="1" d="M20 33 L30 25 L40 33"/>
+  <path pathLength="1" class="vine" d="M14 17 q3 -6 7 -3 t6 -4 q4 -3 7 1 t8 -2"/>
+{%- elif m == "shell" %}
+  <path pathLength="1" d="M8 33 C8 3 52 3 52 33"/>
+  <path pathLength="1" d="M15 33 C15 14 45 14 45 33"/>
+  <path pathLength="1" d="M9 22 l4 -4 l1 5 M13 14 l5 -3 l0 5 M20 9 l5 -2 l-1 5 M28 7 l5 0 l-2 5 M36 8 l5 2 l-3 4 M43 12 l4 4 l-4 2 M48 19 l3 5 l-4 1"/>
+{%- elif m == "house-pool" %}
+  <path pathLength="1" d="M8 33 V21 H28 V33"/>
+  <path pathLength="1" d="M28 33 V11 H52 V33"/>
+  <path pathLength="1" d="M8 27 h20 M8 30 h20 M12 21 v6 M18 27 v6 M24 21 v6"/>
+  <path pathLength="1" d="M30 37 H54 M33 37 q3 -2 6 0 t6 0 t6 0"/>
+{%- elif m == "canopy" %}
+  <ellipse pathLength="1" cx="30" cy="13" rx="25" ry="4"/>
+  <path pathLength="1" d="M30 13 L8 8 M30 13 L18 6 M30 13 L30 5 M30 13 L42 6 M30 13 L52 8"/>
+  <path pathLength="1" d="M15 33 C15 24 12 20 10 16 M15 33 C15 24 18 20 20 16 M30 33 C30 24 27 20 25 17 M30 33 C30 24 33 20 35 17 M45 33 C45 24 42 20 40 16 M45 33 C45 24 48 20 50 16"/>
+{%- elif m == "paving" %}
+  <path pathLength="1" d="M8 31 L16 25 L24 31 M24 31 L32 25 L40 31 M8 25 L16 19 L24 25 M24 25 L32 19 L40 25"/>
+  <path pathLength="1" d="M47 33 V6 H52 V33"/>
+{%- elif m == "villa" %}
+  <path pathLength="1" d="M4 18 H56 L52 22 H8 Z"/>
+  <path pathLength="1" d="M12 18 L9 22 M20 18 L17 22 M36 18 L33 22 M44 18 L41 22 M10 22 V33 M50 22 V33"/>
+  <path pathLength="1" d="M25 33 V12 M32 33 V12 M25 12 Q28.5 10 32 12 M25 18 H32 M25 24 H32"/>
+  <path pathLength="1" d="M38 24 V33 M41 24 V33 M44 24 V33 M47 24 V33"/>
+{%- elif m == "apartment" %}
+  <path pathLength="1" d="M17 33 V6 H43 V33"/>
+  <path pathLength="1" d="M22 11 h5 v5 h-5 z M33 11 h5 v5 h-5 z M22 21 h5 v5 h-5 z M33 21 h5 v5 h-5 z"/>
+{%- elif m == "mountain" %}
+  <path pathLength="1" d="M4 30 L17 13 L26 22 L37 7 L56 30"/>
+  <path pathLength="1" d="M40 33 V26 L45 22 L50 26 V33"/>
+{%- elif m == "rooftop" %}
+  <path pathLength="1" d="M14 33 V14 H46 V33"/>
+  <path pathLength="1" d="M19 18 v5 M25 18 v5 M31 18 v5 M37 18 v5 M19 26 v5 M25 26 v5 M31 26 v5 M37 26 v5"/>
+  <path pathLength="1" d="M22 14 V7 H42 L46 11 V14"/>
+{%- elif m == "actuator" %}
+  <path pathLength="1" d="M8 14 H40 V30 H8 Z"/>
+  <path pathLength="1" class="bag" d="M11 27 C11 20 21 20 21 27 C21 20 31 20 31 27 Z"/>
+  <path pathLength="1" d="M33 17 V27 M33 22 H56"/>
+{%- else %}
+  <path pathLength="1" d="M15 33 V18 L30 8 L45 18 V33"/>
+  <path pathLength="1" d="M27 33 V25 H33 V33"/>
+{%- endif %}
+</svg>

@@ -1,0 +1,111 @@
+# ---------------------------------------------------------------------------
+# Nederlandse teksten voor de hele site (vertaling van src/en/en.11tydata.yaml).
+# Alleen de tekst na de dubbele punt vertalen; de woorden ervoor niet veranderen.
+# Placeholders staan tussen [vierkante haken].
+# ---------------------------------------------------------------------------
+
+lang: nl
+prefix: "/nl"
+locale: nl_NL
+
+ui:
+  skip: Naar de inhoud
+  menu: Menu
+  close: Sluiten
+  nav_label: Hoofdmenu
+  approach: Aanpak
+  work: Werk
+  studio: Studio
+  contact: Contact
+  sheet: Blad
+  all: Alles
+  filter_label: Projecten filteren
+  shown_one: "{n} project zichtbaar"
+  shown_many: "{n} projecten zichtbaar"
+  open_project: Project bekijken
+  all_work: Volledige index
+  previous: Vorig project
+  next: Volgend project
+  back_to_index: Al het werk
+  project: Project
+  location: Locatie
+  type: Type
+  status: Status
+  website: Website
+  year: Jaar
+  description: Beschrijving
+  images: Tekeningen en beelden
+  figure: Fig.
+  diagram: Diagram
+  language: Taal
+  title_block: Stempel
+  airshade_drawing: Gevelaanzicht, lamellen
+  airshade_aria: Geveldoorsnede met lamellen die sluiten naarmate de zon sterker wordt
+  airshade_note: Beweeg de schuifregelaar. De lamellen sluiten naarmate de zon sterker wordt.
+  sun_intensity: Zonintensiteit
+  categories:
+    pavilion: Paviljoens
+    building: Gebouwen
+    house: Woningen
+    renovation: Renovaties
+    competition: Prijsvragen
+    research: Onderzoek
+
+description: Nikola Znaor Architects. Architectuur gevormd door natuurlijke intelligentie, in Nederland en Kroatië. Beschikbaar voor particuliere woningen en renovaties.
+
+tagline:
+  - Architectuur gevormd door natuurlijke intelligentie,
+  - in Nederland en Kroatië.
+
+approach:
+  statement:
+    - Structuur die groeit uit haar plek.
+    - Minimaal, functioneel en verfijnd.
+  text: "Elk project begint bij zijn plek: de grond waarop het staat, de baan van de zon, de wind en het klimaat, de materialen die voorhanden zijn en het vakmanschap van de mensen die er bouwen. Het gebouw groeit uit deze omstandigheden, zoals een plant uit zijn bodem groeit."
+  principles:
+    - title: Trouw aan het materiaal
+      sketch: material   # little animated drawing: material | structure | climate
+      text: Steen, hout en kalk gebruikt om wat ze zijn, met het vakmanschap van de mensen die ermee bouwen zichtbaar gemaakt.
+    - title: Constructie als expressie
+      sketch: structure   # little animated drawing: material | structure | climate
+      text: De krachtenloop wordt de vorm. Ribben, schalen en vertakte steunen dragen het gebouw en geven het zijn karakter.
+    - title: Klimaat voorop
+      sketch: climate   # little animated drawing: material | structure | climate
+      text: Oriëntatie, zonwering en ventilatie gaan voor alles, zodat het gebouw het werk doet in plaats van machines.
+
+studio:
+  statement: Van eerste schets tot vergunning tot bouw.
+  text: Nikola Znaor is een bekroonde architect en uitvinder en werkt tussen Nederland en Kroatië.
+  facts:
+    - label: Oprichter
+      value: Nikola Znaor, MArch
+    - label: Geregistreerd
+      value: Architect in Nederland en Kroatië
+    - label: Kantoren
+      value: Amsterdam, Zagreb
+    - label: Diensten
+      value: Nieuwbouw, renovatie, vergunningen, bouw, prijsvragen
+    - label: Talen
+      value: "Kroatisch, Nederlands (moedertaal) · Engels, Duits (vloeiend) · Italiaans (gemiddeld)"
+
+press:
+  title: Pers en prijzen
+  press_title: Pers en prijzen
+  talks_title: Lezingen en workshops
+  press:
+    # url: optional link to the article
+    - when: "2025"
+      what: "Archello Awards, Pavilion of the Year: SOMBRA (met MVRDV)"
+    - when: "2025"
+      what: "ArchDaily: SOMBRA Pavilion / MVRDV"
+      url: https://www.archdaily.com/1029913/sombra-pavilion-mvrdv
+    - when: "2025"
+      what: "DETAIL: SOMBRA-paviljoen in Venetië van MVRDV"
+      url: https://www.detail.de/de_en/sombra-pavillon-in-venedig-von-mvrdv
+    - when: "2025"
+      what: "Dezeen: tentoonstellingen Architectuurbiënnale Venetië"
+      url: https://www.dezeen.com/2025/05/20/venice-architecture-biennale-exhibitions-off-the-beaten-track/
+  talks: []   # add entries here (when / what / url) to show this list again
+
+contact:
+  availability: Beschikbaar voor particuliere woningen en renovaties.

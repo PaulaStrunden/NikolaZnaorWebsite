@@ -1,0 +1,9 @@
+{#-
+  Blue blueprint band at the top of every page except Home.
+  Set before including:  bandTitle, bandMeta (optional), bandTree (seed text, optional, draws a tree)
+-#}
+<header class="band{% if bandTree %} band--project{% endif %}">
+  <canvas class="blueprint"{% if bandTree %} data-tree="{{ bandTree }}"{% endif %} aria-hidden="true"></canvas>
+  {%- if bandMeta %}<p class="band-meta">{{ bandMeta | safe }}</p>{% endif %}
+  <h1>{{ bandTitle }}</h1>
+</header>

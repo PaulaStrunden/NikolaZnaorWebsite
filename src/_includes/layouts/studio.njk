@@ -1,0 +1,29 @@
+---
+layout: layouts/page.njk
+---
+{% include "partials/studio.njk" %}
+
+{#- Press, awards and talks. Entries come from src/<lang>/<lang>.11tydata.yaml (press:) -#}
+<section id="press" aria-labelledby="press-title">
+  <div class="title-row"><span>03.1</span><h2 id="press-title">{{ press.title }}</h2></div>
+  <div class="split">
+    <div>
+      <h3 class="list-title">{{ press.press_title }}</h3>
+      <ul class="entries">
+        {%- for e in press.press %}
+        <li><span class="when">{{ e.when }}</span><span>{% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.what }} <span aria-hidden="true">↗</span></a>{% else %}{{ e.what }}{% endif %}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- if press.talks and press.talks.length %}
+    <div>
+      <h3 class="list-title">{{ press.talks_title }}</h3>
+      <ul class="entries">
+        {%- for e in press.talks %}
+        <li><span class="when">{{ e.when }}</span><span>{% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.what }} <span aria-hidden="true">↗</span></a>{% else %}{{ e.what }}{% endif %}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+  </div>
+</section>

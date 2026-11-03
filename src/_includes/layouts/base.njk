@@ -1,0 +1,71 @@
+{#-
+  Base layout: every page uses this.
+  It draws the "drawing sheet" (thin border), the blue navigation, the footer title block,
+  and all SEO / social media tags. Page layouts (home, page, project) fill in the middle.
+-#}
+{%- set pageTitle = (title + " · " + site.name) if title else site.name -%}
+{%- set pageDescription = description_override or summary or description -%}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <link rel="canonical" href="{{ page.url | absoluteUrl }}">
+  <meta name="theme-color" content="#002FA7">
+  {#- The same page in the other languages, for search engines #}
+  {%- set path = page.url.slice(prefix.length) %}
+  {%- for l in site.languages %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ (l.prefix + path) | absoluteUrl }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ path | absoluteUrl }}">
+
+  {#- Social media previews (Open Graph) #}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:url" content="{{ page.url | absoluteUrl }}">
+  <meta property="og:image" content="{% ogImage images %}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:locale" content="{{ locale }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  {#- Fonts: Barlow is self-hosted. If DIN Next LT Pro is licensed later, add its @font-face to fonts.css. #}
+  <link rel="preload" href="/assets/fonts/barlow-condensed-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/main.css?v={{ site.version }}">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  {#- Tells the CSS that JavaScript is running (used for the menu and filter). #}
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="/assets/js/blueprint.js?v={{ site.version }}" defer></script>
+  <script src="/assets/js/nav.js?v={{ site.version }}" defer></script>
+  <script src="/assets/js/filter.js?v={{ site.version }}" defer></script>
+  <script src="/assets/js/airshade.js?v={{ site.version }}" defer></script>
+  <script src="/assets/js/video.js?v={{ site.version }}" defer></script>
+
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}"}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">{{ ui.skip }}</a>
+{#- Colour filter that swaps Klein Blue and white (used for blue drawings in the project list).
+    It reads only the green channel, which image compression leaves stable, so the background becomes pure white. #}
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="klein-invert" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0 -1.2255 0 0 1.2255  0 -1 0 0 1.184  0 -0.4228 0 0 1.0778  0 0 0 1 0"/>
+  </filter>
+</svg>
+
+<div class="sheet">
+  {% include "partials/nav.njk" %}
+
+  {{ content | safe }}
+
+  {% include "partials/titleblock.njk" %}
+</div>
+</body>
+</html>

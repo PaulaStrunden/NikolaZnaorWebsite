@@ -1,0 +1,11 @@
+{#-
+  Filter buttons for a project list (Work page and Home).
+  Every category in site.categories gets a button, in that order.
+-#}
+  <div class="filters" role="group" aria-label="{{ ui.filter_label }}" hidden>
+    <button type="button" aria-pressed="true" data-filter="all">{{ ui.all }}</button>
+    {%- for cat in site.categories %}
+    <button type="button" aria-pressed="false" data-filter="{{ cat }}">{{ ui.categories[cat] or cat }}</button>
+    {%- endfor %}
+  </div>
+  <p class="visually-hidden" role="status" data-filter-status data-one="{{ ui.shown_one }}" data-many="{{ ui.shown_many }}"></p>

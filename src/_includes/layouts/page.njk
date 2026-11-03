@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+{#- Standard page: blue blueprint band with the page title, then the white sheet. -#}
+{%- set bandTitle = title -%}
+{#- No sheet label in the section bands (Approach, Work, Studio, Contact); the number stays in the strip below. -#}
+{% include "partials/band.njk" %}
+<main id="main">
+{{ content | safe }}
+</main>

@@ -1,0 +1,14 @@
+{#-
+  Footer as the title block of a drawing sheet (the box in the corner of every plan).
+  The language cell links to the same page in every language (site.languages in src/_data/site.js).
+-#}
+<footer class="titleblock" aria-label="{{ ui.title_block }}">
+  <div><span class="tb-label">{{ ui.project }}</span>{{ site.name }}</div>
+  <div class="tb-sheet"><span class="tb-label">{{ ui.sheet }}</span>{{ sheet or "00" }}{% if title %} {{ title }}{% endif %}</div>
+  <div><span class="tb-label">{{ ui.contact }}</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+  <div><span class="tb-label">{{ ui.language }}</span>
+    {%- set path = page.url.slice(prefix.length) %}
+    {%- for l in site.languages %} <a href="{{ l.prefix }}{{ path }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang %} aria-current="true"{% endif %}>{{ l.label }}</a>{% endfor %}
+  </div>
+  <div><span class="tb-label">©</span>{% year %}</div>
+</footer>

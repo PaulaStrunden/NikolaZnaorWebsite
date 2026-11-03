@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+---
+{#- 02 Work: the full project schedule with the filter. Filter buttons are built from the categories in use. -#}
+{%- set projects = collections["projects_" + lang] -%}
+<section id="work" aria-labelledby="work-title">
+  <div class="title-row"><span>02</span><h2 id="work-title">{{ ui.work }}</h2></div>
+  {%- set shown = projects %}
+  {% include "partials/work-filters.njk" %}
+  {#- asyncEach (not for): needed because the rows contain images, which are processed asynchronously #}
+  {%- asyncEach project in projects %}
+  {% include "partials/project-row.njk" %}
+  {%- endeach %}
+</section>

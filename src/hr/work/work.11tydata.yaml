@@ -1,0 +1,5 @@
+# Settings for every project file in this folder (copy this file into every language's work/ folder).
+layout: layouts/project.njk
+# Sheet number shown on the page and in the footer: order 3 -> "02.3" (the index page itself stays "02")
+eleventyComputed:
+  sheet: "{% if order %}02.{{ order }}{% else %}02{% endif %}"

@@ -1,0 +1,20 @@
+{#-
+  One row of the project schedule (Home and Work). Opens to show a short text and the first image.
+  Expects `project` (an item of collections.projects_<lang>).
+-#}
+{%- set d = project.data -%}
+<details class="project" data-type="{{ d.category }}">
+  <summary>
+    <span class="mini-cell">{% include "partials/project-mini.njk" %}</span><span class="title">{{ d.title }}</span><span class="place">{{ d.location }}</span><span class="type">{{ [d.type, d.status] | joinFilled }}</span><span>{{ d.year }}</span>
+  </summary>
+  <div class="project-body">
+    {#- Columns follow the row above: link under "All", text under the title, image from axis D #}
+    <div class="open-cell"><a class="more" href="{{ project.url }}">{{ ui.open_project }} <span aria-hidden="true">→</span><span class="visually-hidden">: {{ d.title }}</span></a></div>
+    <div class="project-text"><p>{{ d.summary }}</p></div>
+    {#- The first image (usually the blue drawing), compact. It also opens the project
+        (a second link for mouse users; keyboard users use "Open project"). #}
+    <a class="media" href="{{ project.url }}" tabindex="-1" aria-hidden="true">
+      <span class="media-cell{% if d.images[0].fit == "contain" or d.images[0].drawing %} drawing{% endif %}">{% figure d.images[0], "(max-width: 760px) 100vw, 50vw" %}</span>
+    </a>
+  </div>
+</details>

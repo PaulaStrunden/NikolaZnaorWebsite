@@ -1,0 +1,128 @@
+---
+layout: layouts/base.njk
+---
+{#-
+  Project page, drawn as one sheet of the drawing set "02 Work".
+
+  A  Blue strip with the project title in bold and the sheet number.
+     Directly below: the opening row of images, sized to fit the screen without scrolling.
+  B  Title block: project, location, type, status, year.
+  C  Description: lead sentence and facts on the left, text on the right.
+  D  Diagram (only if the project has `diagram:` in its front matter, e.g. Airshade).
+  E  The remaining drawings and images, numbered Fig. 01, Fig. 02 … in rows of three
+  F  Previous / All work / Next.
+
+  All content comes from the project's Markdown file in src/<lang>/work/.
+-#}
+{%- set projects = collections["projects_" + lang] -%}
+{%- set i = projects | indexOfUrl(page.url) -%}
+{%- set no = sheet -%}
+{%- set prev = projects[i - 1] if i > 0 else projects | last -%}
+{%- set next = projects[i + 1] if i < projects.length - 1 else projects | first -%}
+
+{#- A  Band -#}
+{%- set bandTitle = title -%}
+{%- set bandMeta = '<span class="sheet-no">' + ui.sheet + " " + no + "<br></span>" + ([location, year] | joinFilled) -%}
+<header class="band band--strip">
+  <h1>{{ title }}</h1>
+  <p class="band-meta">{{ bandMeta | safe }}</p>
+</header>
+
+<main id="main" class="project-sheet">
+
+  {#- Opening row: the first row of images, right under the title -#}
+  {%- set laid = images | figureLayout -%}
+  {%- set firstRow = laid | firstRowCount -%}
+  {%- if laid.length %}
+  <section class="opening" aria-label="{{ ui.images }}">
+    <div class="figures">
+      {%- set offset = 0 %}{% set extra = "" %}
+      {%- asyncEach img in laid.slice(0, firstRow) %}
+      <figure class="{{ img.span }}{{ extra }}">
+        {%- if img.video %}
+        <span class="vid"><video src="/assets/video/{{ img.video }}" muted loop playsinline preload="metadata" data-autoplay aria-label="{{ img.alt }}"></video></span>
+        {%- else %}
+        {% figure img, ("100vw" if img.span == "wide" else ("(max-width: 760px) 100vw, 50vw" if img.span == "half" else "(max-width: 760px) 100vw, 33vw")) %}
+        {%- endif %}
+        <figcaption><span class="fig-no">{{ ui.figure }} {{ (loop.index + offset) | pad }}</span><span>{{ img.caption or img.label }}{% if img.credit %} <span class="credit">© {{ img.credit }}</span>{% endif %}</span></figcaption>
+      </figure>
+      {%- endeach %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {#- B  Title block -#}
+  <section aria-labelledby="tb-title">
+    <div class="title-row"><span>{{ no }}</span><h2 id="tb-title">{{ ui.project }}</h2></div>
+    <dl class="facts-block">
+      <div><dt>{{ ui.project }}</dt><dd>{{ title }}</dd></div>
+      <div><dt>{{ ui.location }}</dt><dd>{{ location }}</dd></div>
+      <div><dt>{{ ui.type }}</dt><dd>{{ type }}</dd></div>
+      {%- if status %}<div><dt>{{ ui.status }}</dt><dd>{{ status }}</dd></div>{% endif %}
+      <div><dt>{{ ui.year }}</dt><dd>{{ year }}</dd></div>
+      {%- if website %}
+      <div><dt>{{ ui.website }}</dt><dd><a class="ext" href="{{ website }}" rel="noopener">{{ website | replace("https://", "") | replace("www.", "") }} <span aria-hidden="true">↗</span></a></dd></div>
+      {%- endif %}
+    </dl>
+  </section>
+
+  {#- C  Description -#}
+  <section aria-labelledby="desc-title">
+    <div class="title-row"><span>A</span><h2 id="desc-title">{{ ui.description }}</h2></div>
+    <div class="split">
+      <div>
+        {%- if lead %}<p class="statement">{{ lead }}</p>{% endif %}
+        {%- if facts %}
+        <ul class="facts">
+          {%- for f in facts %}<li>{{ f }}</li>{% endfor %}
+        </ul>
+        {%- endif %}
+      </div>
+      <div class="prose">
+        {{ content | safe }}
+      </div>
+    </div>
+  </section>
+
+  {#- D  Diagram -#}
+  {%- if diagram == "airshade" %}
+  <section aria-labelledby="diagram-title">
+    <div class="title-row"><span>B</span><h2 id="diagram-title">{{ ui.diagram }}</h2></div>
+    <div class="split">
+      <div>
+        <p class="small">{{ ui.airshade_note }}</p>
+      </div>
+      {% include "partials/airshade.njk" %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {#- E  Remaining drawings and images -#}
+  {%- if laid.length > firstRow %}
+  <section aria-labelledby="img-title">
+    <div class="title-row"><span>{{ "C" if diagram else "B" }}</span><h2 id="img-title">{{ ui.images }}</h2></div>
+    <div class="figures">
+      {%- set offset = firstRow %}{% set extra = "" %}
+      {%- asyncEach img in laid.slice(firstRow) %}
+      <figure class="{{ img.span }}{{ extra }}">
+        {%- if img.video %}
+        <span class="vid"><video src="/assets/video/{{ img.video }}" muted loop playsinline preload="metadata" data-autoplay aria-label="{{ img.alt }}"></video></span>
+        {%- else %}
+        {% figure img, ("100vw" if img.span == "wide" else ("(max-width: 760px) 100vw, 50vw" if img.span == "half" else "(max-width: 760px) 100vw, 33vw")) %}
+        {%- endif %}
+        <figcaption><span class="fig-no">{{ ui.figure }} {{ (loop.index + offset) | pad }}</span><span>{{ img.caption or img.label }}{% if img.credit %} <span class="credit">© {{ img.credit }}</span>{% endif %}</span></figcaption>
+      </figure>
+      {%- endeach %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {#- F  Previous / next -#}
+  {%- if projects.length > 1 %}
+  <nav class="pager" aria-label="{{ ui.work }}">
+    <a href="{{ prev.url }}" rel="prev"><span class="tb-label"><span aria-hidden="true">← </span>{{ ui.previous }}</span>{{ prev.data.title }}</a>
+    <a href="{{ prefix }}/work/" class="pager-index"><span class="tb-label">02</span>{{ ui.back_to_index }}</a>
+    <a href="{{ next.url }}" rel="next"><span class="tb-label">{{ ui.next }}<span aria-hidden="true"> →</span></span>{{ next.data.title }}</a>
+  </nav>
+  {%- endif %}
+</main>

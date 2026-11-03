@@ -1,0 +1,126 @@
+# ---------------------------------------------------------------------------
+# English texts for the whole site.
+# Every page inside src/en/ can use these values.
+# To translate: copy this file to src/hr/hr.11tydata.yaml and translate the
+# text after each colon. Keep the words before the colon unchanged.
+#
+# Placeholders are written in [square brackets] so they are easy to find.
+# ---------------------------------------------------------------------------
+
+lang: en
+# Start of every link in this language. English has none; Croatian will be "/hr".
+prefix: ""
+# Language and region for social media previews
+locale: en_GB
+
+# Short texts used by the layout (menu, buttons, labels) ---------------------
+ui:
+  skip: Skip to content
+  menu: Menu
+  close: Close
+  nav_label: Main
+  approach: Approach
+  work: Work
+  studio: Studio
+  contact: Contact
+  sheet: Sheet
+  all: All
+  filter_label: Filter projects
+  shown_one: "{n} project shown"
+  shown_many: "{n} projects shown"
+  open_project: Open project
+  all_work: Full index
+  previous: Previous project
+  next: Next project
+  back_to_index: All work
+  project: Project
+  location: Location
+  type: Type
+  status: Status
+  website: Website
+  year: Year
+  description: Description
+  images: Drawings and images
+  figure: Fig.
+  diagram: Diagram
+  language: Language
+  title_block: Title block
+  airshade_drawing: Facade elevation, fins
+  airshade_aria: Facade section with fins that close as the sun gets stronger
+  airshade_note: Move the slider. The fins close as the sun gets stronger.
+  sun_intensity: Sun intensity
+  categories:
+    pavilion: Pavilions
+    building: Buildings
+    house: Houses
+    renovation: Renovations
+    competition: Competitions
+    research: Research
+
+# Search engines and social media -------------------------------------------
+description: Nikola Znaor Architects. Architecture shaped by natural intelligence, in the Netherlands and Croatia. Available for private houses and renovations.
+
+# Hero on the home page ------------------------------------------------------
+# Each line of the list is one line on screen.
+tagline:
+  - Architecture shaped by natural intelligence,
+  - in the Netherlands and Croatia.
+
+# 01 Approach ----------------------------------------------------------------
+approach:
+  # Large text. Each line of the list starts on a new line.
+  statement:
+    - Structure that grows from its place.
+    - Minimal, functional and intricate.
+  # Smaller text under the statement.
+  text: "Every project begins with its place: the ground it stands on, the path of the sun, the wind and the climate, the materials close at hand and the craft of the people who build there. The building grows out of these conditions, the way a plant grows from its soil."
+  principles:
+    - title: Truth to material
+      sketch: material   # little animated drawing: material | structure | climate
+      text: Stone, timber and lime used for what they are, with the craft of the people who build with them made visible.
+    - title: Structure as expression
+      sketch: structure   # little animated drawing: material | structure | climate
+      text: The load path becomes the form. Ribs, shells and branching supports carry the building and give it its character.
+    - title: Climate first
+      sketch: climate   # little animated drawing: material | structure | climate
+      text: Orientation, shading and ventilation come before anything else, so the building does the work instead of machines.
+
+# 03 Studio ------------------------------------------------------------------
+studio:
+  statement: From first sketch to permit to construction.
+  text: Nikola Znaor is an award-winning architect and inventor working between the Netherlands and Croatia.
+  facts:
+    - label: Founder
+      value: Nikola Znaor, MArch
+    - label: Licensed
+      value: Architect in the Netherlands and Croatia
+    - label: Offices
+      value: Amsterdam, Zagreb
+    - label: Services
+      value: New buildings, renovation, permits, construction, competitions
+    - label: Languages
+      value: "Croatian, Dutch (native) · English, German (fluent) · Italian (intermediate)"
+
+# Press, awards and talks (shown on the Studio page) -------------------------
+press:
+  title: Press and awards
+  press_title: Press and awards
+  talks_title: Talks and workshops
+  press:
+    # url: optional link to the article
+    - when: "2025"
+      what: "Archello Awards, Pavilion of the Year: SOMBRA (with MVRDV)"
+    - when: "2025"
+      what: "ArchDaily: SOMBRA Pavilion / MVRDV"
+      url: https://www.archdaily.com/1029913/sombra-pavilion-mvrdv
+    - when: "2025"
+      what: "DETAIL: SOMBRA pavilion in Venice by MVRDV"
+      url: https://www.detail.de/de_en/sombra-pavillon-in-venedig-von-mvrdv
+    - when: "2025"
+      what: "Dezeen: Venice Architecture Biennale exhibitions"
+      url: https://www.dezeen.com/2025/05/20/venice-architecture-biennale-exhibitions-off-the-beaten-track/
+  talks: []   # add entries here (when / what / url) to show this list again
+
+# 04 Contact -----------------------------------------------------------------
+contact:
+  availability: Available for private houses and renovations.

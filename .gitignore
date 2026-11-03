@@ -1,0 +1,15 @@
+# Built site and dependencies (rebuilt with: npx @11ty/eleventy)
+node_modules/
+_site/
+.cache/
+
+# Large source material, not needed to build the site
+PROJECTS/
+WIREFRAME/
+_image_originals/
+_video_originals/
+/*.png
+nikola-znaor-architects-v3.html
+
+# System files
+.DS_Store
