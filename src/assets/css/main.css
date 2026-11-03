@@ -363,8 +363,9 @@ html:not(.js) .facade label { display: none; }
   .titleblock > div:nth-child(3) { grid-column: 1 / -1; border-right: none; }   /* contact gets the full width */
   .titleblock > div:nth-child(4) { border-right: 1px solid var(--line); }
 
-  /* Captions as a blue strip under the image, white text, with a white hairline above */
-  .figures figcaption { background: var(--klein); color: var(--white); border-top: 1px solid var(--white); }
-  .figures .fig-no { border-right: 1px solid var(--line-light); }
+  /* Only the first caption (Fig. 01, under the opening drawing) is a blue strip with white text;
+     all other captions stay white with blue text, as on desktop */
+  .opening .figures figure:first-child figcaption { background: var(--klein); color: var(--white); border-top: 1px solid var(--white); }
+  .opening .figures figure:first-child .fig-no { border-right: 1px solid var(--line-light); }
   .opening .figures figure + figure figcaption { box-shadow: none; }
 }
