@@ -152,6 +152,14 @@ export default function (eleventyConfig) {
       urlPath: "/img/",
       ...(archive ? { filenameFormat: (id, src, width, format) => `${archive}_${width}w.${format}` } : {}),
     });
+    // Archive file names stay readable (…_Fig04_800w.jpeg) but carry the image's content hash as ?v=,
+    // so a browser never shows an old cached picture after the figures are reordered.
+    const v = fs.statSync(input).size.toString(36) + Math.round(fs.statSync(input).mtimeMs / 1000).toString(36);
+    for (const fmt of Object.values(metadata))
+      for (const entry of fmt) {
+        entry.url += `?v=${v}`;
+        entry.srcset = `${entry.url} ${entry.width}w`;
+      }
     return Image.generateHTML(metadata, {
       alt: image.alt,
       sizes,

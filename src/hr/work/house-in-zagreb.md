@@ -22,27 +22,26 @@ images:
     alt: "Kuća u ulici za oblačna dana: svijetlo kameno pročelje s visokim drvenim prozorima i malim balkonima, između drveća i susjednih kuća, ispred mokra cesta u kojoj se zrcali."
     caption: "U ulici"
     position: center 85%
-  - src: house-in-zagreb/concept.jpg
+  - src: house-in-zagreb/site-plan-1-500.jpg
+    alt: "Situacija čestice i susjednih zgrada uz ulicu; bijele linije na plavom."
+    caption: "Situacija"
+    position: right center
+  - src: house-in-zagreb/concept-full.jpg
     alt: "Četiri sheme: od postojeće kuće do nove, uz zadržavanje položaja, linije pročelja i dvostrešnog krova; bijele linije na plavom."
     caption: "Koncept"
     fit: contain
-  - src: house-in-zagreb/render-front.jpg
+  - src: house-in-zagreb/render-front-space.jpg
     alt: "Bijeli model uličnog pročelja: visoki drveni prozori s malim balkonima, ulazno stubište i predvrt."
     caption: "Ulično pročelje, model"
-    position: center 45%
   - src: house-in-zagreb/plan-first-zoom.jpg
     alt: "Tlocrt prvog kata; bijele linije na plavom."
     caption: "Tlocrt 1. kata"
     fit: contain
-  - src: house-in-zagreb/section-rotated.jpg
+  - src: house-in-zagreb/section-cropped.jpg
     alt: "Presjek kroz kuću s etažama i dvostrešnim krovom; bijele linije na plavom."
     caption: "Presjek A–A"
     fit: contain
-  - src: house-in-zagreb/site-plan-1-500.jpg
-    alt: "Situacija čestice i susjednih zgrada uz ulicu; bijele linije na plavom."
-    caption: "Situacija"
-    fit: contain
-  - src: house-in-zagreb/elevation-west-margin.jpg
+  - src: house-in-zagreb/elevation-west-lower.jpg
     alt: "Nacrt vrtnog pročelja s velikim prozorima i balkonom; bijele linije na plavom."
     caption: "Vrtno pročelje, nacrt"
     fit: contain

@@ -22,27 +22,26 @@ images:
     alt: "The house in its street on an overcast day: a light stone facade with tall timber windows and small balconies, between trees and the neighbouring houses, the wet road reflecting in front."
     caption: "In the street"
     position: center 85%
-  - src: house-in-zagreb/concept.jpg
+  - src: house-in-zagreb/site-plan-1-500.jpg
+    alt: "Site plan of the plot and its neighbours along the street; white lines on blue."
+    caption: "Site plan"
+    position: right center
+  - src: house-in-zagreb/concept-full.jpg
     alt: "Four diagrams: from the existing house to the new one, keeping its position, facade line and gabled roof; white lines on blue."
     caption: "Concept"
     fit: contain
-  - src: house-in-zagreb/render-front.jpg
+  - src: house-in-zagreb/render-front-space.jpg
     alt: "White model of the street facade: tall timber windows with small balconies, the entrance stair and the forecourt."
     caption: "Street facade, model"
-    position: center 45%
   - src: house-in-zagreb/plan-first-zoom.jpg
     alt: "First floor plan; white lines on blue."
     caption: "First floor plan"
     fit: contain
-  - src: house-in-zagreb/section-rotated.jpg
+  - src: house-in-zagreb/section-cropped.jpg
     alt: "Section through the house showing the floors and the gabled roof; white lines on blue."
     caption: "Section A–A"
     fit: contain
-  - src: house-in-zagreb/site-plan-1-500.jpg
-    alt: "Site plan of the plot and its neighbours along the street; white lines on blue."
-    caption: "Site plan"
-    fit: contain
-  - src: house-in-zagreb/elevation-west-margin.jpg
+  - src: house-in-zagreb/elevation-west-lower.jpg
     alt: "Elevation of the garden facade with large windows and a balcony; white lines on blue."
     caption: "Garden facade, elevation"
     fit: contain

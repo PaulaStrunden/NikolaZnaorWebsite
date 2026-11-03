@@ -22,27 +22,26 @@ images:
     alt: "Het huis in de straat op een bewolkte dag: een lichte stenen gevel met hoge houten ramen en kleine balkons, tussen bomen en de buurhuizen; op de voorgrond weerspiegelt de natte weg."
     caption: "In de straat"
     position: center 85%
-  - src: house-in-zagreb/concept.jpg
+  - src: house-in-zagreb/site-plan-1-500.jpg
+    alt: "Situatietekening van de kavel en de belendende percelen langs de straat; witte lijnen op blauw."
+    caption: "Situatie"
+    position: right center
+  - src: house-in-zagreb/concept-full.jpg
     alt: "Vier schema's: van het bestaande huis naar het nieuwe, met behoud van positie, gevellijn en zadeldak; witte lijnen op blauw."
     caption: "Concept"
     fit: contain
-  - src: house-in-zagreb/render-front.jpg
+  - src: house-in-zagreb/render-front-space.jpg
     alt: "Wit model van de straatgevel: hoge houten ramen met kleine balkons, de entreetrap en het voorerf."
     caption: "Straatgevel, model"
-    position: center 45%
   - src: house-in-zagreb/plan-first-zoom.jpg
     alt: "Plattegrond van de eerste verdieping; witte lijnen op blauw."
     caption: "Plattegrond eerste verdieping"
     fit: contain
-  - src: house-in-zagreb/section-rotated.jpg
+  - src: house-in-zagreb/section-cropped.jpg
     alt: "Doorsnede door het huis met de verdiepingen en het zadeldak; witte lijnen op blauw."
     caption: "Doorsnede A–A"
     fit: contain
-  - src: house-in-zagreb/site-plan-1-500.jpg
-    alt: "Situatietekening van de kavel en de belendende percelen langs de straat; witte lijnen op blauw."
-    caption: "Situatie"
-    fit: contain
-  - src: house-in-zagreb/elevation-west-margin.jpg
+  - src: house-in-zagreb/elevation-west-lower.jpg
     alt: "Aanzicht van de tuingevel met grote ramen en een balkon; witte lijnen op blauw."
     caption: "Tuingevel, aanzicht"
     fit: contain
