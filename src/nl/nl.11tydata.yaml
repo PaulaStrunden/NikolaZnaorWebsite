@@ -51,7 +51,7 @@ ui:
     competition: Prijsvragen
     research: Onderzoek
 
-description: Nikola Znaor Architects. Architectuur gevormd door natuurlijke intelligentie. Beschikbaar voor particuliere woningen en renovaties.
+description: Nikola Znaor Architects. Architectuur gevormd door natuurlijke intelligentie. Open voor opdrachten, van particuliere woningen en renovaties tot paviljoens en openbare gebouwen.
 
 tagline:
   - Architectuur gevormd door natuurlijke intelligentie.
@@ -107,4 +107,4 @@ press:
   talks: []   # add entries here (when / what / url) to show this list again
 
 contact:
-  availability: Beschikbaar voor particuliere woningen en renovaties.
+  availability: Open voor opdrachten, van particuliere woningen en renovaties tot paviljoens en openbare gebouwen.

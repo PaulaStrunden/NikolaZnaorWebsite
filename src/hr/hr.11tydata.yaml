@@ -52,7 +52,7 @@ ui:
     competition: Natječaji
     research: Istraživanja
 
-description: Nikola Znaor Architects. Arhitektura oblikovana prirodnom inteligencijom. Prihvaćamo projekte privatnih kuća i obnova.
+description: Nikola Znaor Architects. Arhitektura oblikovana prirodnom inteligencijom. Otvoreni za nove narudžbe, od privatnih kuća i obnova do paviljona i javnih zgrada.
 
 tagline:
   - Arhitektura oblikovana prirodnom inteligencijom.
@@ -108,4 +108,4 @@ press:
   talks: []   # add entries here (when / what / url) to show this list again
 
 contact:
-  availability: Prihvaćamo projekte privatnih kuća i obnova.
+  availability: Otvoreni za nove narudžbe, od privatnih kuća i obnova do paviljona i javnih zgrada.

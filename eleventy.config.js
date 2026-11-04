@@ -153,15 +153,24 @@ export default function (eleventyConfig) {
       urlPath: "/img/",
       ...(archive ? { filenameFormat: (id, src, width, format) => `${archive}_${width}w.${format}` } : {}),
     });
-    // Archive file names stay readable (…_Fig04_800w.jpeg) but carry the image's content hash as ?v=,
-    // so a browser never shows an old cached picture after the figures are reordered.
+    // Archive file names stay readable (…_Fig04_800w.jpeg) but carry a version tag ?v=… taken from
+    // the source file (size + date), so a browser never shows an old cached picture after the
+    // figures are reordered.
+    // eleventy-img hands every page the SAME cached `metadata` object for an image, so we must not
+    // change it in place (that is what stacked ?v=…?v=… once per language). We build a fresh copy,
+    // and strip any existing tag first, so each URL always ends with exactly one ?v=.
     const v = fs.statSync(input).size.toString(36) + Math.round(fs.statSync(input).mtimeMs / 1000).toString(36);
-    for (const fmt of Object.values(metadata))
-      for (const entry of fmt) {
-        entry.url += `?v=${v}`;
-        entry.srcset = `${entry.url} ${entry.width}w`;
-      }
-    return Image.generateHTML(metadata, {
+    const withVersion = (url) => `${url.replace(/(\?|%3F)v(=|%3D).*$/i, "")}?v=${v}`;
+    const versioned = Object.fromEntries(
+      Object.entries(metadata).map(([format, entries]) => [
+        format,
+        entries.map((entry) => {
+          const url = withVersion(entry.url);
+          return { ...entry, url, srcset: `${url} ${entry.width}w` };
+        }),
+      ])
+    );
+    return Image.generateHTML(versioned, {
       alt: image.alt,
       sizes,
       loading: "lazy",

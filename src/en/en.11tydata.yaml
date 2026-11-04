@@ -58,7 +58,7 @@ ui:
     research: Research
 
 # Search engines and social media -------------------------------------------
-description: Nikola Znaor Architects. Architecture shaped by natural intelligence. Available for private houses and renovations.
+description: Nikola Znaor Architects. Architecture shaped by natural intelligence. Open for commissions, from private houses and renovations to pavilions and public buildings.
 
 # Hero on the home page ------------------------------------------------------
 # Each line of the list is one line on screen.
@@ -122,4 +122,4 @@ press:
 
 # 04 Contact -----------------------------------------------------------------
 contact:
-  availability: Available for private houses and renovations.
+  availability: Open for commissions, from private houses and renovations to pavilions and public buildings.
